@@ -79,7 +79,7 @@ Cek juga repo lain yang membahas
     nah karena kita mau buat projek sebelumnya jadi modular, susun dulu file dan folder nya seperti ini:
     ![alt text](gambar/file.png)
 
-    - Ada beberapa tambahan dan perubahan dari yang sebelumnya:
+4.5. **Ada beberapa tambahan dan perubahan dari yang sebelumnya:**
 
     header.php, gak perlu buat banyak header di banyak tempat
     ```php
