@@ -18,7 +18,7 @@ Cek juga repo lain yang membahas
     ![alt text](gambar/Bukaxxamp.png)
 
 3. **eXAMPP PHPmyAdmin**
-
+    Pake Database sebelumnya, kalo belum punya boleh
     - Buat Database dulu
     ![alt text](gambar/1.0.png)
 
@@ -70,25 +70,81 @@ Cek juga repo lain yang membahas
     } else echo "Koneksi berhasil";
     ?>
     ```
+4. **Modulo?**
+    
+    nah karena kita mau buat projek sebelumnya jadi modular, susun dulu file dan folder nya seperti ini:
+    ![alt text](gambar/file.png)
 
-    ![alt text](gambar/2.1.png)
+    - Ada beberapa tambahan dan perubahan dari yang sebelumnya:
 
-    satu lagi ``index.php`` buat baca isi database dan nampilin secara webview(belum dikasih css). 
+    header.php, gak perlu buat banyak header di banyak tempat
+    ```php
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contoh Modularisasi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="<?= BASE_URL ?>asset/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Modularisasi Menggunakan Require</h1>
+            </header>
+            <nav>
+            // mereka begini biar mudah navigasinya, mengatassi massalah pathing(minor sebenarnya tapi less effort aja)
+                <a href="<?= BASE_URL ?>view/home.php">Home</a>
+                <a href="<?= BASE_URL ?>view/about.php">Tentang</a>
+                <a href="<?= BASE_URL ?>view/kontak.php">Kontak</a>
+            </nav>
+            <?php if (isset($_SESSION['login'])) {?>
+                <div class="greeting">
+                    <span style="color:#667eea; font-weight:600;">Hai, <?= $_SESSION['nama'] ?>!</span><br>
+                    <a href="<?= BASE_URL ?>module/auth/logout.php" class="btn btn-danger">Logout</a>
+                </div>
+            <?php } ?>  
+    ```
+
+    footer.php, nice
+    ```php
+            <footer>
+                <p>&copy; 2021, Informatika, Universitas Pelita Bangsa</p>
+            </footer>
+        </div>
+    </body>
+
+    </html>
+    ```
+
+    - [ini elemen (not so much)penting](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/config/gajah.php) mention pake 
+    ```php 
+    require_once __DIR__ . 'config/gajah.php'; //pathing tetap tergantung dari mana dipanggilnya ya 
+    ```
+
+    - cara penggunaan header.php dan footer.php
+    ```php
+    <?php 
+    require_once __DIR__ . '/../config/gajah.php'; //mention dulu kalo pake yang ada di gajah.php juga
+    require ROOT . 'view/header.php'; ?> // bisa juga langsung mention di sini ubah aja ke __DIR__ . 'buka_file_apa', tapi harus sesuai dengan penempatannya ya 
+    <div class="container">
+        <h1>Ini Halaman About</h1>
+        <p>Ini adalah bagian content dari halaman.</p>
+    </div>
+    <?php require ROOT . 'view/footer.php'; ?> //panggil
+    ```
+
+    - fungsi index pindah ke home.php, sekarang index dipakai sebagai penyambut aja
+
+    - [login.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/login.php) dan [logout.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/logout.php) tidak akan berbicara banyak selain 'tugas mereka adalah nampilin modal login dan logout'.
+
+    - karena semua filenya pindah tempat jadi harus teliti di hal-hal pemanggilan file
 
 
-    - Buat file php untuk Buat, 
-    ![alt text](gambar/2.2.png)
-    [tambah.php](https://github.com/laLafid/Lab8Web/blob/bf9b36adf779856239dfa021ea572ec23bebcf30/tambah.php)    
 
-    Ubah,
-    ![alt text](gambar/2.3.png)
-    [ubah.php](https://github.com/laLafid/Lab8Web/blob/bf9b36adf779856239dfa021ea572ec23bebcf30/ubah.php)
-
-    Hapus (kejadian setelah)
-    ![alt text](gambar/2.4.png)
-    [hapus.php](https://github.com/laLafid/Lab8Web/blob/bf9b36adf779856239dfa021ea572ec23bebcf30/hapus.php)
-
-4. **Hasil Akhir**
+5. **Hasil Akhir**
 
     Tampilan setelah diberi css.
     
