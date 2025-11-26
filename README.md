@@ -3,7 +3,7 @@
 
 Halo halo, Sekarang disini akan mencoba menggunakan PHP dan MySQL dengan lebih Modular.
 Cek juga repo lain yang membahas
- [Html dasar](https://github.com/laLafid/Lab1Web), [CSS dasar](https://github.com/laLafid/lab2web), [CSS](https://github.com/laLafid/Lab3Web), [CSS Layout](https://github.com/laLafid/Lab4Web), [Dasar Javascript](https://github.com/laLafid/Lab5Web), [Dasar Bootstarp](https://github.com/laLafid/Lab6Web) dan [Dasar PHP](https://github.com/laLafid/Lab6Web), [CRUP PHP](https://github.com/laLafid/Lab8Web)
+ [Html dasar](https://github.com/laLafid/Lab1Web), [CSS dasar](https://github.com/laLafid/lab2web), [CSS](https://github.com/laLafid/Lab3Web), [CSS Layout](https://github.com/laLafid/Lab4Web), [Dasar Javascript](https://github.com/laLafid/Lab5Web), [Dasar Bootstarp](https://github.com/laLafid/Lab6Web) dan [Dasar PHP](https://github.com/laLafid/Lab6Web), [CRUD PHP](https://github.com/laLafid/Lab8Web)
 
 
 ## Langkah-langkah
@@ -13,9 +13,11 @@ Cek juga repo lain yang membahas
     ![alt text](gambar/vs.png)
     - XAMPP, kalo belum punya unduh dulu di [sini](https://www.apachefriends.org/).
 
+
 2. **Siapkan MySQL**
     - Buka XAMPP control panel dulu, aktifin ``apache`` dan ``mysql`` lalu pencet admin dibagian ``mysql`` buat masuk ke phpmyadmin.
     ![alt text](gambar/Bukaxxamp.png)
+
 
 3. **eXAMPP PHPmyAdmin**
     Pake Database sebelumnya, kalo belum punya boleh
@@ -70,6 +72,8 @@ Cek juga repo lain yang membahas
     } else echo "Koneksi berhasil";
     ?>
     ```
+
+
 4. **Modulo?**
     
     nah karena kita mau buat projek sebelumnya jadi modular, susun dulu file dan folder nya seperti ini:
@@ -141,6 +145,7 @@ Cek juga repo lain yang membahas
     - [login.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/login.php) dan [logout.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/logout.php) tidak akan berbicara banyak selain 'tugas mereka adalah nampilin modal login dan logout'.
 
     - karena semua filenya pindah tempat jadi harus teliti di hal-hal pemanggilan file
+
 
 
 
