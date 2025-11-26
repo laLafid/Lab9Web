@@ -142,7 +142,7 @@ Cek juga repo lain yang membahas
 
     - fungsi index pindah ke home.php, sekarang index dipakai sebagai penyambut aja
 
-    - [login.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/login.php) dan [logout.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/logout.php) tidak akan berbicara banyak selain 'tugas mereka adalah nampilin modal login dan logout'.
+    - [login.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/login.php) dan [logout.php](https://github.com/laLafid/Lab9Web/blob/8d88ce25ff7c263b7d7905a9e2414dc74a1b443d/module/auth/logout.php), tidak akan berbicara banyak selain 'tugas mereka adalah nampilin modal login dan logout'.
 
     - karena semua filenya pindah tempat jadi harus teliti di hal-hal pemanggilan file
 
