@@ -1,9 +1,9 @@
-# Latihan PHP
+# Latihan Modular PHP
 
 
-Halo halo, Sekarang disini akan mencoba menggunakan PHP dan MySQL.
+Halo halo, Sekarang disini akan mencoba menggunakan PHP dan MySQL dengan lebih Modular.
 Cek juga repo lain yang membahas
- [Html dasar](https://github.com/laLafid/Lab1Web), [CSS dasar](https://github.com/laLafid/lab2web), [CSS](https://github.com/laLafid/Lab3Web), [CSS Layout](https://github.com/laLafid/Lab4Web), [Dasar Javascript](https://github.com/laLafid/Lab5Web), [Dasar Bootstarp](https://github.com/laLafid/Lab6Web) dan [Dasar PHP](https://github.com/laLafid/Lab6Web)
+ [Html dasar](https://github.com/laLafid/Lab1Web), [CSS dasar](https://github.com/laLafid/lab2web), [CSS](https://github.com/laLafid/Lab3Web), [CSS Layout](https://github.com/laLafid/Lab4Web), [Dasar Javascript](https://github.com/laLafid/Lab5Web), [Dasar Bootstarp](https://github.com/laLafid/Lab6Web) dan [Dasar PHP](https://github.com/laLafid/Lab6Web), [CRUP PHP](https://github.com/laLafid/Lab8Web)
 
 
 ## Langkah-langkah

@@ -2,24 +2,23 @@
 
 define('ROOT', __DIR__ . '/../');                   
 define('CONFIG', ROOT . 'config/');
-define('VIEW', ROOT . 'view/');
-define('ASSET', ROOT . 'asset/');
-define('GAMBAR', ROOT . 'gambar/');
-define('MODULE', ROOT . 'module/auth/user/');
 
-define('BASE_URL', 'http://localhost/webpro9/');         
+define('GAMBAR', ROOT . 'gambar/');
+
+
+define('BASE_URL', 'http://localhost/webpro9/');         // ganti kalo error
 
 require_once CONFIG . 'koneksi.php';
 
-$load_data_barang = false;
+$loda = false;
 
-if (isset($load_data_barang_from_include)) {
-    $load_data_barang = $load_data_barang_from_include;
+if (isset($loda_aja)) {
+    $loda = $loda_aja;
 }
 
 $result = null;
 
-if ($load_data_barang) {
+if ($loda) {
     $sql = 'SELECT * FROM data_barang ORDER BY id_barang DESC';
     $result = mysqli_query($conn, $sql);
     if (!$result) {

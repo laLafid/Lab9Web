@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
     if ($file_gambar['error'] == 0) {
         $filename = str_replace(' ', '_', $file_gambar['name']);
-        $destination = dirname(__FILE__) . '/gambar/' . $filename;
+        $destination = GAMBAR . $filename;
         if (move_uploaded_file($file_gambar['tmp_name'], $destination)) {
             $gambar = 'gambar/' . $filename;
         }
@@ -77,6 +77,7 @@ function is_select($var, $val) {
             <div class="submit">
                 <input type="hidden" name="id" value="<?php echo $data['id_barang']; ?>" />
                 <input type="submit" name="submit" value="Simpan" />
+                <a href="<?= BASE_URL ?>view/home.php" class="btn">Kembali</a>
             </div>
         </form>
     </div>

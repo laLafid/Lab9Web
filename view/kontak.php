@@ -6,7 +6,7 @@ if (!isset($_SESSION['login'])) {
 }
 require ROOT . 'view/header.php'; ?>
 <div class="content">
-    <h2>Ini Halaman About</h2>
+    <h2>Ini Halaman Kontak</h2>
     <p>Ini adalah bagian content dari halaman.</p>
 </div>
 <?php require ROOT . 'view/footer.php'; ?>
